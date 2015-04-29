@@ -1,0 +1,30 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Response Request</Title>
+    <Author>Jake Schmitt</Author>
+    <Shortcut>respreq</Shortcut>
+    <Description>Code snippet for VM's response request bases</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>classname</ID>
+        <Tooltip>Class Name</Tooltip>
+        <Default>ClassName</Default>
+        <Function></Function>
+      </Literal>
+    </Declarations>
+    <Code Language="csharp"><![CDATA[public class $classname$Request : RequestMessageBase
+      {
+        $end$
+      }
+      public class $classname$Response : ResponseMessageBase
+      {
+
+      }]]></Code>
+   </Snippet>
+ </CodeSnippet>

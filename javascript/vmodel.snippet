@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>VM JS Model Template</Title>
+            <Author>Jake Schmitt</Author>
+            <Shortcut>vmodel</Shortcut>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>model</ID>
+                    <Tooltip>Name of your new model</Tooltip>
+                    <Default>Model</Default>
+                    <Function></Function>                
+                </Literal>
+                <Literal Editable="true">
+                    <ID>element</ID>
+                    <Tooltip>Element to bind model to</Tooltip>
+                    <Default>"ElementId"</Default>
+                    <Function></Function>                
+                </Literal>
+            </Declarations>
+            <Code Language="javascript">
+                <![CDATA[(function(vm, settings) {
+                    
+                    var $model$ = function(element) {
+                        var self = this;
+    
+                        // properties
+                        
+                        // computeds
+
+                        // functions
+
+                        //initializer
+                        init();
+
+                        function init() {
+                            var el = element || document.getElementById($element$);
+                            ko.applyBindings(self, el);
+                        }
+
+                        // private functions
+
+                    };
+
+                    // attach to global namespace
+                    vm.$model$ = $model$;
+
+                })(window.vm, window.vm.settings);]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

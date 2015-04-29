@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Self Executing Anomymous Function</Title>
+            <Author>Jake Schmitt</Author>
+            <Shortcut>selfexec</Shortcut>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="true">
+                    <ID>input</ID>
+                    <Tooltip>Input</Tooltip>
+                    <Default>window.m2</Default>
+                    <Function></Function>                
+                </Literal>
+                <Literal Editable="true">
+                    <ID>params</ID>
+                    <Tooltip>Parameters</Tooltip>
+                    <Default>m2</Default>
+                    <Function></Function>                
+                </Literal>
+                <Literal Editable="true">
+                    <ID>code</ID>
+                    <Tooltip>Code</Tooltip>
+                    <Default></Default>
+                    <Function></Function>                
+                </Literal>
+            </Declarations>
+            <Code Language="javascript">
+                <![CDATA[(function($params$) {                                            
+
+                    })($input$);]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
